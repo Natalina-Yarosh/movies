@@ -14,7 +14,7 @@
     </div>
     <div class="movies" v-if="movieStore.activeTab === 1">
       <div>
-        <h3>Watched Movies (count: {{ movieStore.watchedMovies.length }})</h3>
+        <h3>Watched Movies (count: {{ movieStore?.watchedMovies?.length }})</h3>
         <Movie
         v-for="movie of movieStore.watchedMovies"
         :key="movie.id"
